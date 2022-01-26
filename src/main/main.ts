@@ -110,6 +110,10 @@ const createWindow = async () => {
   // Remove this if your app does not use auto updates
   // eslint-disable-next-line
   new AppUpdater();
+  
+  // Example of IPC from main to renderer
+  const messageFromMainToRenderer = 'table tennis';
+  mainWindow?.webContents.send('main-to-renderer-example', messageFromMainToRenderer;
 };
 
 /**
